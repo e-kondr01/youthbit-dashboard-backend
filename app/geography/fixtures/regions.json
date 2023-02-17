@@ -1,1 +1,767 @@
-[{"model": "geography.region", "pk": 1, "fields": {"name": "Республика Адыгея", "coords": null, "code": "RU-AD"}}, {"model": "geography.region", "pk": 2, "fields": {"name": "Республика Алтай", "coords": null, "code": ""}}, {"model": "geography.region", "pk": 3, "fields": {"name": "Алтайский край", "coords": null, "code": "RU-ALT"}}, {"model": "geography.region", "pk": 4, "fields": {"name": "Амурская область", "coords": null, "code": "RU-AMU"}}, {"model": "geography.region", "pk": 5, "fields": {"name": "Архангельская область", "coords": null, "code": "RU-ARK"}}, {"model": "geography.region", "pk": 6, "fields": {"name": "Астраханская  область", "coords": null, "code": "RU-AST"}}, {"model": "geography.region", "pk": 7, "fields": {"name": "Республика Башкортостан", "coords": null, "code": "RU-BA"}}, {"model": "geography.region", "pk": 8, "fields": {"name": "Белгородская область", "coords": null, "code": "RU-BEL"}}, {"model": "geography.region", "pk": 9, "fields": {"name": "Брянская область", "coords": null, "code": "RU-BRY"}}, {"model": "geography.region", "pk": 10, "fields": {"name": "Республика Бурятия", "coords": null, "code": "RU-BU"}}, {"model": "geography.region", "pk": 11, "fields": {"name": "Владимирская область", "coords": null, "code": "RU-VLA"}}, {"model": "geography.region", "pk": 12, "fields": {"name": "Волгоградская область", "coords": null, "code": "RU-VLGG"}}, {"model": "geography.region", "pk": 13, "fields": {"name": "Вологодская область", "coords": null, "code": "RU-VLG"}}, {"model": "geography.region", "pk": 14, "fields": {"name": "Воронежская область", "coords": null, "code": "RU-VOR"}}, {"model": "geography.region", "pk": 15, "fields": {"name": "Республика Дагестан", "coords": null, "code": "RU-DA"}}, {"model": "geography.region", "pk": 16, "fields": {"name": "Еврейская автономная область", "coords": null, "code": "RU-YEV"}}, {"model": "geography.region", "pk": 17, "fields": {"name": "Забайкальский край", "coords": null, "code": "RU-ZAB"}}, {"model": "geography.region", "pk": 18, "fields": {"name": "Ивановская область", "coords": null, "code": "RU-IVA"}}, {"model": "geography.region", "pk": 19, "fields": {"name": "Республика Ингушетия", "coords": null, "code": "RU-IN"}}, {"model": "geography.region", "pk": 20, "fields": {"name": "Иркутская область", "coords": null, "code": "RU-IRK"}}, {"model": "geography.region", "pk": 21, "fields": {"name": "Кабардино-Балкарская Республика", "coords": null, "code": "RU-KB"}}, {"model": "geography.region", "pk": 22, "fields": {"name": "Калининградская область", "coords": null, "code": "RU-KGD"}}, {"model": "geography.region", "pk": 23, "fields": {"name": "Республика Калмыкия", "coords": null, "code": "RU-KL"}}, {"model": "geography.region", "pk": 24, "fields": {"name": "Калужская область", "coords": null, "code": "RU-KLU"}}, {"model": "geography.region", "pk": 25, "fields": {"name": "Камчатский край", "coords": null, "code": "RU-KAM"}}, {"model": "geography.region", "pk": 26, "fields": {"name": "Республика Карелия", "coords": null, "code": "RU-KR"}}, {"model": "geography.region", "pk": 27, "fields": {"name": "Кемеровская область", "coords": null, "code": "RU-KEM"}}, {"model": "geography.region", "pk": 28, "fields": {"name": "Кировская область", "coords": null, "code": "RU-KIR"}}, {"model": "geography.region", "pk": 29, "fields": {"name": "Республика Коми", "coords": null, "code": "RU-KO"}}, {"model": "geography.region", "pk": 30, "fields": {"name": "Костромская область", "coords": null, "code": "RU-KOS"}}, {"model": "geography.region", "pk": 31, "fields": {"name": "Краснодарский край", "coords": null, "code": "RU-KDA"}}, {"model": "geography.region", "pk": 32, "fields": {"name": "Красноярский край", "coords": null, "code": "RU-KYA"}}, {"model": "geography.region", "pk": 33, "fields": {"name": "Республика Крым", "coords": null, "code": "RU-CR"}}, {"model": "geography.region", "pk": 34, "fields": {"name": "Курганская область", "coords": null, "code": "RU-KGN"}}, {"model": "geography.region", "pk": 35, "fields": {"name": "Курская область", "coords": null, "code": "RU-KRS"}}, {"model": "geography.region", "pk": 36, "fields": {"name": "Ленинградская область", "coords": null, "code": "RU-LEN"}}, {"model": "geography.region", "pk": 37, "fields": {"name": "Липецкая область", "coords": null, "code": "RU-LIP"}}, {"model": "geography.region", "pk": 38, "fields": {"name": "Магаданская область", "coords": null, "code": "RU-MAG"}}, {"model": "geography.region", "pk": 39, "fields": {"name": "Республика Марий Эл", "coords": null, "code": "RU-ME"}}, {"model": "geography.region", "pk": 40, "fields": {"name": "Республика Мордовия", "coords": null, "code": "RU-MO"}}, {"model": "geography.region", "pk": 41, "fields": {"name": "Москва", "coords": null, "code": "RU-MOW"}}, {"model": "geography.region", "pk": 42, "fields": {"name": "Московская область", "coords": null, "code": "RU-MOS"}}, {"model": "geography.region", "pk": 43, "fields": {"name": "Мурманская область", "coords": null, "code": "RU-MUR"}}, {"model": "geography.region", "pk": 44, "fields": {"name": "Ненецкий автономный округ", "coords": null, "code": "RU-NEN"}}, {"model": "geography.region", "pk": 45, "fields": {"name": "Нижегородская область", "coords": null, "code": "RU-NIZ"}}, {"model": "geography.region", "pk": 46, "fields": {"name": "Новгородская область", "coords": null, "code": "RU-NGR"}}, {"model": "geography.region", "pk": 47, "fields": {"name": "Новосибирская область", "coords": null, "code": "RU-NVS"}}, {"model": "geography.region", "pk": 48, "fields": {"name": "Омская область", "coords": null, "code": "RU-OMS"}}, {"model": "geography.region", "pk": 49, "fields": {"name": "Оренбургская область", "coords": null, "code": "RU-ORE"}}, {"model": "geography.region", "pk": 50, "fields": {"name": "Орловская область", "coords": null, "code": "RU-ORL"}}, {"model": "geography.region", "pk": 51, "fields": {"name": "Пензенская область", "coords": null, "code": "RU-PNZ"}}, {"model": "geography.region", "pk": 52, "fields": {"name": "Пермский край", "coords": null, "code": "RU-PER"}}, {"model": "geography.region", "pk": 53, "fields": {"name": "Приморский край", "coords": null, "code": "RU-PRI"}}, {"model": "geography.region", "pk": 54, "fields": {"name": "Псковская область", "coords": null, "code": "RU-PSK"}}, {"model": "geography.region", "pk": 55, "fields": {"name": "Ростовская область", "coords": null, "code": "RU-ROS"}}, {"model": "geography.region", "pk": 56, "fields": {"name": "Рязанская область", "coords": null, "code": "RU-RYA"}}, {"model": "geography.region", "pk": 57, "fields": {"name": "Самарская область", "coords": null, "code": "RU-SAM"}}, {"model": "geography.region", "pk": 58, "fields": {"name": "Санкт-Петербург", "coords": null, "code": "RU-SPE"}}, {"model": "geography.region", "pk": 59, "fields": {"name": "Саратовская область", "coords": null, "code": "RU-SAR"}}, {"model": "geography.region", "pk": 60, "fields": {"name": "Республика Саха (Якутия)", "coords": null, "code": "RU-SA"}}, {"model": "geography.region", "pk": 61, "fields": {"name": "Сахалинская область", "coords": null, "code": "RU-SAK"}}, {"model": "geography.region", "pk": 62, "fields": {"name": "Свердловская область", "coords": null, "code": "RU-SVE"}}, {"model": "geography.region", "pk": 63, "fields": {"name": "Севастополь", "coords": null, "code": "RU-SEV"}}, {"model": "geography.region", "pk": 64, "fields": {"name": "Смоленская область", "coords": null, "code": "RU-SMO"}}, {"model": "geography.region", "pk": 65, "fields": {"name": "Ставропольский край", "coords": null, "code": "RU-STA"}}, {"model": "geography.region", "pk": 66, "fields": {"name": "Тамбовская область", "coords": null, "code": "RU-TAM"}}, {"model": "geography.region", "pk": 67, "fields": {"name": "Республика Татарстан", "coords": null, "code": "RU-TA"}}, {"model": "geography.region", "pk": 68, "fields": {"name": "Тверская область", "coords": null, "code": "RU-TVE"}}, {"model": "geography.region", "pk": 69, "fields": {"name": "Томская область", "coords": null, "code": "RU-TOM"}}, {"model": "geography.region", "pk": 70, "fields": {"name": "Тульская область", "coords": null, "code": "RU-TUL"}}, {"model": "geography.region", "pk": 71, "fields": {"name": "Республика Тыва", "coords": null, "code": "RU-TY"}}, {"model": "geography.region", "pk": 72, "fields": {"name": "Тюменская область", "coords": null, "code": "RU-TYU"}}, {"model": "geography.region", "pk": 73, "fields": {"name": "Удмуртская Республика", "coords": null, "code": "RU-UD"}}, {"model": "geography.region", "pk": 74, "fields": {"name": "Ульяновская область", "coords": null, "code": "RU-ULY"}}, {"model": "geography.region", "pk": 75, "fields": {"name": "Хабаровский край", "coords": null, "code": "RU-KHA"}}, {"model": "geography.region", "pk": 76, "fields": {"name": "Республика Хакасия", "coords": null, "code": "RU-KK"}}, {"model": "geography.region", "pk": 77, "fields": {"name": "Ханты-Мансийский автономный округ - Югра", "coords": null, "code": "RU-KHM"}}, {"model": "geography.region", "pk": 78, "fields": {"name": "Челябинская область", "coords": null, "code": "RU-CHE"}}, {"model": "geography.region", "pk": 79, "fields": {"name": "Чеченская Республика", "coords": null, "code": "RU-CE"}}, {"model": "geography.region", "pk": 80, "fields": {"name": "Чувашская Республика", "coords": null, "code": "RU-CU"}}, {"model": "geography.region", "pk": 81, "fields": {"name": "Чукотский автономный округ", "coords": null, "code": "RU-CHU"}}, {"model": "geography.region", "pk": 82, "fields": {"name": "Ямало-Ненецкий автономный округ", "coords": null, "code": "RU-YAN"}}, {"model": "geography.region", "pk": 83, "fields": {"name": "Ярославская область", "coords": null, "code": "RU-YAR"}}, {"model": "geography.region", "pk": 84, "fields": {"name": "Республика Северная Осетия - Алания", "coords": null, "code": "RU-SE"}}, {"model": "geography.region", "pk": 85, "fields": {"name": "Карачаево-Черкесская Республика", "coords": null, "code": "RU-KC"}}]
+[
+  {
+    "model": "geography.region",
+    "pk": 1,
+    "fields": {
+      "name": "Республика Адыгея",
+      "coords": null,
+      "code": "RU-AD"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 2,
+    "fields": {
+      "name": "Республика Алтай",
+      "coords": null,
+      "code": "RU-AL"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 3,
+    "fields": {
+      "name": "Алтайский край",
+      "coords": null,
+      "code": "RU-ALT"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 4,
+    "fields": {
+      "name": "Амурская область",
+      "coords": null,
+      "code": "RU-AMU"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 5,
+    "fields": {
+      "name": "Архангельская область",
+      "coords": null,
+      "code": "RU-ARK"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 6,
+    "fields": {
+      "name": "Астраханская  область",
+      "coords": null,
+      "code": "RU-AST"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 7,
+    "fields": {
+      "name": "Республика Башкортостан",
+      "coords": null,
+      "code": "RU-BA"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 8,
+    "fields": {
+      "name": "Белгородская область",
+      "coords": null,
+      "code": "RU-BEL"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 9,
+    "fields": {
+      "name": "Брянская область",
+      "coords": null,
+      "code": "RU-BRY"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 10,
+    "fields": {
+      "name": "Республика Бурятия",
+      "coords": null,
+      "code": "RU-BU"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 11,
+    "fields": {
+      "name": "Владимирская область",
+      "coords": null,
+      "code": "RU-VLA"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 12,
+    "fields": {
+      "name": "Волгоградская область",
+      "coords": null,
+      "code": "RU-VLGG"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 13,
+    "fields": {
+      "name": "Вологодская область",
+      "coords": null,
+      "code": "RU-VLG"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 14,
+    "fields": {
+      "name": "Воронежская область",
+      "coords": null,
+      "code": "RU-VOR"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 15,
+    "fields": {
+      "name": "Республика Дагестан",
+      "coords": null,
+      "code": "RU-DA"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 16,
+    "fields": {
+      "name": "Еврейская автономная область",
+      "coords": null,
+      "code": "RU-YEV"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 17,
+    "fields": {
+      "name": "Забайкальский край",
+      "coords": null,
+      "code": "RU-ZAB"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 18,
+    "fields": {
+      "name": "Ивановская область",
+      "coords": null,
+      "code": "RU-IVA"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 19,
+    "fields": {
+      "name": "Республика Ингушетия",
+      "coords": null,
+      "code": "RU-IN"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 20,
+    "fields": {
+      "name": "Иркутская область",
+      "coords": null,
+      "code": "RU-IRK"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 21,
+    "fields": {
+      "name": "Кабардино-Балкарская Республика",
+      "coords": null,
+      "code": "RU-KB"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 22,
+    "fields": {
+      "name": "Калининградская область",
+      "coords": null,
+      "code": "RU-KGD"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 23,
+    "fields": {
+      "name": "Республика Калмыкия",
+      "coords": null,
+      "code": "RU-KL"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 24,
+    "fields": {
+      "name": "Калужская область",
+      "coords": null,
+      "code": "RU-KLU"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 25,
+    "fields": {
+      "name": "Камчатский край",
+      "coords": null,
+      "code": "RU-KAM"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 26,
+    "fields": {
+      "name": "Республика Карелия",
+      "coords": null,
+      "code": "RU-KR"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 27,
+    "fields": {
+      "name": "Кемеровская область",
+      "coords": null,
+      "code": "RU-KEM"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 28,
+    "fields": {
+      "name": "Кировская область",
+      "coords": null,
+      "code": "RU-KIR"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 29,
+    "fields": {
+      "name": "Республика Коми",
+      "coords": null,
+      "code": "RU-KO"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 30,
+    "fields": {
+      "name": "Костромская область",
+      "coords": null,
+      "code": "RU-KOS"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 31,
+    "fields": {
+      "name": "Краснодарский край",
+      "coords": null,
+      "code": "RU-KDA"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 32,
+    "fields": {
+      "name": "Красноярский край",
+      "coords": null,
+      "code": "RU-KYA"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 33,
+    "fields": {
+      "name": "Республика Крым",
+      "coords": null,
+      "code": "RU-CR"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 34,
+    "fields": {
+      "name": "Курганская область",
+      "coords": null,
+      "code": "RU-KGN"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 35,
+    "fields": {
+      "name": "Курская область",
+      "coords": null,
+      "code": "RU-KRS"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 36,
+    "fields": {
+      "name": "Ленинградская область",
+      "coords": null,
+      "code": "RU-LEN"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 37,
+    "fields": {
+      "name": "Липецкая область",
+      "coords": null,
+      "code": "RU-LIP"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 38,
+    "fields": {
+      "name": "Магаданская область",
+      "coords": null,
+      "code": "RU-MAG"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 39,
+    "fields": {
+      "name": "Республика Марий Эл",
+      "coords": null,
+      "code": "RU-ME"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 40,
+    "fields": {
+      "name": "Республика Мордовия",
+      "coords": null,
+      "code": "RU-MO"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 41,
+    "fields": {
+      "name": "Москва",
+      "coords": null,
+      "code": "RU-MOW"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 42,
+    "fields": {
+      "name": "Московская область",
+      "coords": null,
+      "code": "RU-MOS"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 43,
+    "fields": {
+      "name": "Мурманская область",
+      "coords": null,
+      "code": "RU-MUR"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 44,
+    "fields": {
+      "name": "Ненецкий автономный округ",
+      "coords": null,
+      "code": "RU-NEN"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 45,
+    "fields": {
+      "name": "Нижегородская область",
+      "coords": null,
+      "code": "RU-NIZ"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 46,
+    "fields": {
+      "name": "Новгородская область",
+      "coords": null,
+      "code": "RU-NGR"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 47,
+    "fields": {
+      "name": "Новосибирская область",
+      "coords": null,
+      "code": "RU-NVS"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 48,
+    "fields": {
+      "name": "Омская область",
+      "coords": null,
+      "code": "RU-OMS"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 49,
+    "fields": {
+      "name": "Оренбургская область",
+      "coords": null,
+      "code": "RU-ORE"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 50,
+    "fields": {
+      "name": "Орловская область",
+      "coords": null,
+      "code": "RU-ORL"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 51,
+    "fields": {
+      "name": "Пензенская область",
+      "coords": null,
+      "code": "RU-PNZ"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 52,
+    "fields": {
+      "name": "Пермский край",
+      "coords": null,
+      "code": "RU-PER"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 53,
+    "fields": {
+      "name": "Приморский край",
+      "coords": null,
+      "code": "RU-PRI"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 54,
+    "fields": {
+      "name": "Псковская область",
+      "coords": null,
+      "code": "RU-PSK"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 55,
+    "fields": {
+      "name": "Ростовская область",
+      "coords": null,
+      "code": "RU-ROS"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 56,
+    "fields": {
+      "name": "Рязанская область",
+      "coords": null,
+      "code": "RU-RYA"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 57,
+    "fields": {
+      "name": "Самарская область",
+      "coords": null,
+      "code": "RU-SAM"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 58,
+    "fields": {
+      "name": "Санкт-Петербург",
+      "coords": null,
+      "code": "RU-SPE"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 59,
+    "fields": {
+      "name": "Саратовская область",
+      "coords": null,
+      "code": "RU-SAR"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 60,
+    "fields": {
+      "name": "Республика Саха (Якутия)",
+      "coords": null,
+      "code": "RU-SA"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 61,
+    "fields": {
+      "name": "Сахалинская область",
+      "coords": null,
+      "code": "RU-SAK"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 62,
+    "fields": {
+      "name": "Свердловская область",
+      "coords": null,
+      "code": "RU-SVE"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 63,
+    "fields": {
+      "name": "Севастополь",
+      "coords": null,
+      "code": "RU-SEV"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 64,
+    "fields": {
+      "name": "Смоленская область",
+      "coords": null,
+      "code": "RU-SMO"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 65,
+    "fields": {
+      "name": "Ставропольский край",
+      "coords": null,
+      "code": "RU-STA"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 66,
+    "fields": {
+      "name": "Тамбовская область",
+      "coords": null,
+      "code": "RU-TAM"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 67,
+    "fields": {
+      "name": "Республика Татарстан",
+      "coords": null,
+      "code": "RU-TA"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 68,
+    "fields": {
+      "name": "Тверская область",
+      "coords": null,
+      "code": "RU-TVE"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 69,
+    "fields": {
+      "name": "Томская область",
+      "coords": null,
+      "code": "RU-TOM"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 70,
+    "fields": {
+      "name": "Тульская область",
+      "coords": null,
+      "code": "RU-TUL"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 71,
+    "fields": {
+      "name": "Республика Тыва",
+      "coords": null,
+      "code": "RU-TY"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 72,
+    "fields": {
+      "name": "Тюменская область",
+      "coords": null,
+      "code": "RU-TYU"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 73,
+    "fields": {
+      "name": "Удмуртская Республика",
+      "coords": null,
+      "code": "RU-UD"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 74,
+    "fields": {
+      "name": "Ульяновская область",
+      "coords": null,
+      "code": "RU-ULY"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 75,
+    "fields": {
+      "name": "Хабаровский край",
+      "coords": null,
+      "code": "RU-KHA"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 76,
+    "fields": {
+      "name": "Республика Хакасия",
+      "coords": null,
+      "code": "RU-KK"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 77,
+    "fields": {
+      "name": "Ханты-Мансийский автономный округ - Югра",
+      "coords": null,
+      "code": "RU-KHM"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 78,
+    "fields": {
+      "name": "Челябинская область",
+      "coords": null,
+      "code": "RU-CHE"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 79,
+    "fields": {
+      "name": "Чеченская Республика",
+      "coords": null,
+      "code": "RU-CE"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 80,
+    "fields": {
+      "name": "Чувашская Республика",
+      "coords": null,
+      "code": "RU-CU"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 81,
+    "fields": {
+      "name": "Чукотский автономный округ",
+      "coords": null,
+      "code": "RU-CHU"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 82,
+    "fields": {
+      "name": "Ямало-Ненецкий автономный округ",
+      "coords": null,
+      "code": "RU-YAN"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 83,
+    "fields": {
+      "name": "Ярославская область",
+      "coords": null,
+      "code": "RU-YAR"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 84,
+    "fields": {
+      "name": "Республика Северная Осетия - Алания",
+      "coords": null,
+      "code": "RU-SE"
+    }
+  },
+  {
+    "model": "geography.region",
+    "pk": 85,
+    "fields": {
+      "name": "Карачаево-Черкесская Республика",
+      "coords": null,
+      "code": "RU-KC"
+    }
+  }
+]
