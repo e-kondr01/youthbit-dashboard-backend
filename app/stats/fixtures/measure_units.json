@@ -1,0 +1,1 @@
+[{"model": "stats.measureunit", "pk": 1, "fields": {"name": "ед"}}, {"model": "stats.measureunit", "pk": 2, "fields": {"name": "чел"}}]

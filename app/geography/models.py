@@ -8,7 +8,7 @@ class Region(models.Model):
         blank=True, null=True, verbose_name="Координаты", help_text="В формате GeoJSON"
     )
 
-    code = models.CharField(max_length=7, blank=True, verbose_name="Код ISO 3166-2")
+    code = models.CharField(max_length=7, unique=True, verbose_name="Код ISO 3166-2")
 
     def __str__(self) -> str:
         return self.name
@@ -16,3 +16,4 @@ class Region(models.Model):
     class Meta:
         verbose_name = "Регион"
         verbose_name_plural = "Регионы"
+        ordering = ("name",)
