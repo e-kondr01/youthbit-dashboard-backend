@@ -7,7 +7,7 @@ import environ
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 env = environ.Env()
-env.read_env(BASE_DIR / "django_core" / ".env")
+env.read_env(BASE_DIR / "app" / ".env")
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = "fzxUxspoPbJsJqm9xDgpFvHte7xa0vyZkhP6N4x8"
@@ -59,7 +59,7 @@ MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
 ]
 
-ROOT_URLCONF = "django_core.urls"
+ROOT_URLCONF = "app.urls"
 
 TEMPLATES = [
     {
@@ -77,7 +77,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "django_core.wsgi.application"
+WSGI_APPLICATION = "app.wsgi.application"
 
 
 # Database
@@ -212,10 +212,10 @@ if not DEBUG:
 # DRF Spectacular
 
 SPECTACULAR_SETTINGS = {
-    "TITLE": "Template Django REST API",
-    "DESCRIPTION": "Template Django REST API",
+    "TITLE": "Youthbit Dashboard",
+    "DESCRIPTION": "Youthbit Dashboard REST API",
     "VERSION": "0.0.1",
-    "SERVE_INCLUDE_SCHEMA": False
+    "SERVE_INCLUDE_SCHEMA": False,
 }
 
 

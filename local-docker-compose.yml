@@ -9,4 +9,4 @@ services:
       - ./data/postgresql:/var/lib/postgresql/data
       - ./dumps:/code/dumps
     env_file:
-      - django_core/django_core/.env
+      - app/app/.env

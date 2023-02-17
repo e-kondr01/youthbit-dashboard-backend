@@ -7,20 +7,20 @@ services:
     expose:
       - 5432
     env_file:
-      - django_core/django_core/.env
+      - app/app/.env
     volumes:
       - ./data/postgresql:/var/lib/postgresql/data
       - ./dumps:/code/dumps
 
   backend:
     restart: always
-    container_name: template_django_core
-    build: ./django_core
+    container_name: django_backend
+    build: ./app
     command: bash -c "
       python manage.py migrate &&
-      gunicorn -w 3 django_core.wsgi:application --bind 0.0.0.0:8000 --reload"
+      gunicorn -w 3 app.wsgi:application --bind 0.0.0.0:8000 --reload"
     volumes:
-      - ./django_core:/django_core
+      - ./app:/app
     expose:
       - 8000
     depends_on:
