@@ -21,17 +21,15 @@ services:
       gunicorn app.wsgi:application --bind 0.0.0.0:8000 --reload"
     volumes:
       - ./app:/app
-    # expose:
-    #   - 8000
-    ports:
-      - 8000:8000
+    expose:
+      - 8000
     depends_on:
       - postgres
 
-  # nginx:
-  #   restart: always
-  #   build: ./nginx
-  #   ports:
-  #     - 8000:80
-  #   depends_on:
-  #     - backend
+  nginx:
+    restart: always
+    build: ./nginx
+    ports:
+      - 8100:80
+    depends_on:
+      - backend
