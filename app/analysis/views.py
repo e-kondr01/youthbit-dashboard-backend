@@ -16,9 +16,7 @@ class RegionAnalysisAPIView(APIView):
         region_name = get_object_or_404(Region, id=region_id).name
         resp = analyze_region(region_name)
         for region in resp:
-            region[
-                "plot"
-            ] = "http://78.140.241.174:8100/media/plots_folder/" + basename(
-                region["plot"]
-            )
+            with open(region["plot"]) as pdf_file:
+                pdf_str = pdf_file.read()
+            region["plot"] = pdf_str
         return Response(resp)
