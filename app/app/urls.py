@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import include, path
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
+
 from users.views import TokenObtainPairView
 
 urlpatterns = [
@@ -15,4 +16,5 @@ urlpatterns = [
     path("auth/", include("djoser.urls.jwt")),
     path("stats/", include("stats.urls")),
     path("geography/", include("geography.urls")),
+    path("analysis/", include("analysis.urls")),
 ]

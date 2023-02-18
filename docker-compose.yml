@@ -11,6 +11,7 @@ services:
     volumes:
       - ./data/postgresql:/var/lib/postgresql/data
       - ./dumps:/code/dumps
+      - ./app/media:/code/app/media
 
   backend:
     restart: always
@@ -33,3 +34,5 @@ services:
       - 8100:80
     depends_on:
       - backend
+    volumes:
+      - ./app/media:/code/app/media
