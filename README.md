@@ -1,4 +1,4 @@
-# Django REST API template
+# YouthBit Dashboard
 
 ## Python version
 = 3.11

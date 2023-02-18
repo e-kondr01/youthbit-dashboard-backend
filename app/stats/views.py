@@ -11,4 +11,4 @@ class FeatureListView(ListAPIView):
 class FeatureValueListView(ListAPIView):
     queryset = FeatureValue.objects.all()
     serializer_class = FeatureValueSerailizer
-    filterset_fields = ("feature",)
+    filterset_fields = ("feature", "region")
