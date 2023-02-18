@@ -1,18 +1,18 @@
-import math
+PERCENTAGE_COLOURS = {
+    1: "#05CB04",
+    0.9: "#34D901",
+    0.8: "#67E300",
+    0.7: "#ABF001",
+    0.6: "#DCF901",
+    0.5: "#FFFF02",
+    0.4: "#FFCA01",
+    0.3: "#FF9703",
+    0.2: "#FF6700",
+    0.1: "#FF4200",
+    0.0: "#FF2E00",
+}
 
 
-def rgb_to_hex(rgb):
-    return "#" + "%02x%02x%02x" % rgb
-
-
-def number_to_hex(mag, cmin, cmax):
-    """Return a tuple of floats between 0 and 1 for R, G, and B."""
-    # Normalize to 0-1
-    try:
-        x = float(mag - cmin) / (cmax - cmin)
-    except ZeroDivisionError:
-        x = 0.5  # cmax == cmin
-    blue = min((max((4 * (0.75 - x), 0.0)), 1.0))
-    red = min((max((4 * (x - 0.25), 0.0)), 1.0))
-    green = min((max((4 * math.fabs(x - 0.5) - 1.0, 0.0)), 1.0))
-    return rgb_to_hex((int(red * 255), int(green * 255), int(blue * 255)))
+def get_color_code_by_number(current_value: int, max_value: int, min_value: int):
+    percentage = (current_value - min_value) / (max_value - min_value)
+    return PERCENTAGE_COLOURS[round(percentage, 1)]
