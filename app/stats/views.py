@@ -14,7 +14,7 @@ from stats.serializers import (
     YearlyFeatureValueSerializer,
 )
 
-CURRENT_YEAR = date.today().year
+CURRENT_YEAR = 2021  # Данные от организаторов предоставлены от 2021 г
 
 
 class ParentFeatureListView(ListAPIView):
