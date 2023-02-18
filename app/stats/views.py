@@ -68,6 +68,6 @@ class FeatureValueListView(ListAPIView):
 
 
 class YearlyFeatureValueListView(ListAPIView):
-    queryset = FeatureValue.objects.all()
+    queryset = FeatureValue.objects.order_by("year")
     filterset_fields = ("feature", "region")
     serializer_class = YearlyFeatureValueSerializer
