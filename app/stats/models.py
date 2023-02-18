@@ -60,6 +60,8 @@ class FeatureValue(models.Model):
         related_name="feature_values",
     )
 
+    year = models.PositiveSmallIntegerField(verbose_name="Год")
+
     def __str__(self) -> str:
         return f"{self.feature} {self.region} {self.value}"
 
