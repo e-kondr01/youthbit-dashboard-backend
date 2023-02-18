@@ -66,3 +66,4 @@ class FeatureValue(models.Model):
     class Meta:
         verbose_name = "Значение показателя"
         verbose_name_plural = "Значения показателей"
+        ordering = ("-value",)
