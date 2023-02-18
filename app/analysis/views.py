@@ -12,7 +12,7 @@ from geography.models import Region
 class RegionAnalysisAPIView(APIView):
     @extend_schema(parameters=[OpenApiParameter("region_id", type=int, required=True)])
     def get(self, request, *_args, **_kwargs):
-        region_id = request.query_params.get("region")
+        region_id = request.query_params.get("region_id")
         region_name = get_object_or_404(Region, id=region_id).name
         resp = analyze_region(region_name)
         for region in resp:
