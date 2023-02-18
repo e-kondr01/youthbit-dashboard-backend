@@ -1,7 +1,11 @@
 from rest_framework.generics import ListAPIView
 
 from stats.models import Feature, FeatureValue
-from stats.serializers import FeatureSerializer, FeatureValueSerailizer
+from stats.serializers import (
+    ChildFeatureValueSerializer,
+    FeatureSerializer,
+    MapFeatureValueSerailizer,
+)
 
 
 class ParentFeatureListView(ListAPIView):
@@ -15,7 +19,13 @@ class ChildFeatureListView(ListAPIView):
     filterset_fields = ("parent_feature",)
 
 
-class FeatureValueListView(ListAPIView):
+class MapFeatureValueListView(ListAPIView):
     queryset = FeatureValue.objects.all()
-    serializer_class = FeatureValueSerailizer
-    filterset_fields = ("feature", "region", "feature__parent_feature")
+    serializer_class = MapFeatureValueSerailizer
+    filterset_fields = ("feature",)
+
+
+class ChildFeatureValueListView(ListAPIView):
+    queryset = FeatureValue.objects.all()
+    filterset_fields = ("region", "feature__parent_feature")
+    serializer_class = ChildFeatureValueSerializer
