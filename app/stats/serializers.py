@@ -1,6 +1,7 @@
 from rest_framework import serializers
 
 from stats.models import Feature, FeatureValue
+from stats.utils import number_to_hex
 
 
 class FeatureSerializer(serializers.ModelSerializer):
@@ -15,8 +16,12 @@ class MapFeatureValueSerailizer(serializers.ModelSerializer):
     region_code = serializers.CharField(source="region.code")
     color = serializers.SerializerMethodField()
 
-    def get_color(self, obj):
-        return "#000000"
+    def get_color(self, obj: FeatureValue) -> str:
+        return number_to_hex(
+            obj.value,
+            self.context["min_value"],
+            self.context["max_value"],
+        )
 
     class Meta:
         model = FeatureValue

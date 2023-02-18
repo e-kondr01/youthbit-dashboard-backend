@@ -1,3 +1,4 @@
+from django.db.models import Max, Min, QuerySet
 from rest_framework.generics import ListAPIView
 
 from stats.models import Feature, FeatureValue
@@ -23,6 +24,15 @@ class MapFeatureValueListView(ListAPIView):
     queryset = FeatureValue.objects.all()
     serializer_class = MapFeatureValueSerailizer
     filterset_fields = ("feature",)
+
+    def get_serializer(self, queryset: QuerySet, **kwargs):
+        max_value = queryset.aggregate(Max("value"))["value__max"]
+        min_value = queryset.aggregate(Min("value"))["value__min"]
+        serializer_class = self.get_serializer_class()
+        context = self.get_serializer_context()
+        context = context | {"max_value": max_value, "min_value": min_value}
+        kwargs.setdefault("context", context)
+        return serializer_class(queryset, **kwargs)
 
 
 class ChildFeatureValueListView(ListAPIView):
