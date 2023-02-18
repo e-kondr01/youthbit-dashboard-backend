@@ -15,4 +15,4 @@ PERCENTAGE_COLOURS = {
 
 def get_color_code_by_number(current_value: int, max_value: int, min_value: int):
     percentage = (current_value - min_value) / (max_value - min_value)
-    return PERCENTAGE_COLOURS[round(percentage, 1)]
+    return PERCENTAGE_COLOURS[1 - round(percentage, 1)]
