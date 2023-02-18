@@ -1,7 +1,7 @@
 from rest_framework.generics import ListAPIView
 
-from app.geography.models import Region
-from app.geography.serializers import RegionSerializer
+from geography.models import Region
+from geography.serializers import RegionSerializer
 
 
 class RegionListAPIView(ListAPIView):
