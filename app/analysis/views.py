@@ -1,5 +1,3 @@
-from os.path import basename
-
 from django.shortcuts import get_object_or_404
 from drf_spectacular.utils import OpenApiParameter, extend_schema
 from rest_framework.response import Response
@@ -15,8 +13,4 @@ class RegionAnalysisAPIView(APIView):
         region_id = request.query_params.get("region_id")
         region_name = get_object_or_404(Region, id=region_id).name
         resp = analyze_region(region_name)
-        for region in resp:
-            with open(region["plot"]) as pdf_file:
-                pdf_str = pdf_file.read()
-            region["plot"] = pdf_str
         return Response(resp)

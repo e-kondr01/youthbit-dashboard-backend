@@ -1,3 +1,4 @@
+import json
 from typing import Dict, List
 
 import pandas as pd
@@ -83,10 +84,7 @@ def plot_2021_forums(region: str):
     )
     fig.update_xaxes(title="Количество форумов, ед.")
 
-    cur_plot_path = FOLDER_TO_SAVE_PLOTS / "forums.html"
-    fig.write_html(cur_plot_path, full_html=False)
-
-    return cur_plot_path
+    return json.loads(fig.to_json())
 
 
 def plot_number_of_unities(region):
@@ -121,10 +119,7 @@ def plot_number_of_unities(region):
         title="Число человек на 1 региональное молодежное объединение",
     )
 
-    cur_plot_path = FOLDER_TO_SAVE_PLOTS / "ppl_on_unit.html"
-    fig.write_html(cur_plot_path, full_html=False)
-
-    return cur_plot_path
+    return json.loads(fig.to_json())
 
 
 def plot_members_percent(region):
@@ -160,10 +155,7 @@ def plot_members_percent(region):
     )
     fig.update_xaxes(title="Процент от численности населения региона, %")
 
-    cur_plot_path = FOLDER_TO_SAVE_PLOTS / "member_percent.html"
-    fig.write_html(cur_plot_path, full_html=False)
-
-    return cur_plot_path
+    return json.loads(fig.to_json())
 
 
 def plot_finance_on_com(region):
@@ -198,10 +190,7 @@ def plot_finance_on_com(region):
     )
     fig.update_xaxes(title="Объем финансирования на 1 структуру, руб.")
 
-    cur_plot_path = FOLDER_TO_SAVE_PLOTS / "finance.html"
-    fig.write_html(cur_plot_path, full_html=False)
-
-    return cur_plot_path
+    return json.loads(fig.to_json())
 
 
 def analyze_forums(region, lower_bracket=-0.7, upper_bracket=0.7):
