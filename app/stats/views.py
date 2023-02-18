@@ -2,6 +2,7 @@ from django.db.models import Max, Min
 from rest_framework.generics import ListAPIView
 from rest_framework.pagination import LimitOffsetPagination
 
+from stats.filters import ChildFeatureValueFilterSet, FeatureValueFilterSet
 from stats.models import Feature, FeatureValue
 from stats.serializers import (
     ChildFeatureValueSerializer,
@@ -49,13 +50,13 @@ class MapFeatureValueListView(ListAPIView):
 
 class ChildFeatureValueListView(ListAPIView):
     queryset = FeatureValue.objects.select_related("feature")
-    filterset_fields = ("region", "feature__parent_feature")
+    filterset_class = ChildFeatureValueFilterSet
     serializer_class = ChildFeatureValueSerializer
     pagination_class = LimitOffsetPagination
 
 
 class FeatureValueListView(ListAPIView):
     queryset = FeatureValue.objects.select_related("region")
-    filterset_fields = ("feature",)
+    filterset_class = FeatureValueFilterSet
     serializer_class = FeatureValueSerializer
     pagination_class = LimitOffsetPagination
