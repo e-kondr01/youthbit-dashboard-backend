@@ -1,4 +1,5 @@
 from django.db import models
+
 from geography.models import Region
 
 
@@ -22,6 +23,17 @@ class Feature(models.Model):
         verbose_name="Единица измерения",
         related_name="features",
     )
+
+    parent_feature = models.ForeignKey(
+        to="self",
+        on_delete=models.CASCADE,
+        verbose_name="Родительский показатель",
+        related_name="child_features",
+        blank=True,
+        null=True,
+    )
+
+    child_features: models.Manager["Feature"]
 
     def __str__(self) -> str:
         return self.name
