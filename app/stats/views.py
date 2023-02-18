@@ -45,6 +45,6 @@ class ChildFeatureValueListView(ListAPIView):
 
 
 class FeatureValueListView(ListAPIView):
-    queryset = FeatureValue.objects.select_related("feature__region")
-    filterset_fields = "feature"
+    queryset = FeatureValue.objects.select_related("region")
+    filterset_fields = ("feature",)
     serializer_class = FeatureValueSerializer

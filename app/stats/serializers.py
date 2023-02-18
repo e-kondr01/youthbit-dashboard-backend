@@ -38,7 +38,7 @@ class ChildFeatureValueSerializer(serializers.ModelSerializer):
 
 
 class FeatureValueSerializer(serializers.ModelSerializer):
-    name = serializers.CharField(source="feature.region.name")
+    name = serializers.CharField(source="region.name")
 
     class Meta:
         model = FeatureValue
