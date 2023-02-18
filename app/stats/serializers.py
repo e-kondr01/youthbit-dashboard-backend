@@ -14,6 +14,7 @@ class FeatureSerializer(serializers.ModelSerializer):
 
 class MapFeatureValueSerailizer(serializers.ModelSerializer):
     region_code = serializers.CharField(source="region.code")
+    region_name = serializers.CharField(source="region.name")
     color = serializers.SerializerMethodField()
 
     def get_color(self, obj: FeatureValue) -> str:
@@ -25,7 +26,7 @@ class MapFeatureValueSerailizer(serializers.ModelSerializer):
 
     class Meta:
         model = FeatureValue
-        fields = ("id", "value", "region_code", "color")
+        fields = ("id", "value", "region_code", "color", "region_name")
 
 
 class ChildFeatureValueSerializer(serializers.ModelSerializer):
