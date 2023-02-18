@@ -5,23 +5,26 @@ from stats.models import Feature, FeatureValue
 from stats.serializers import (
     ChildFeatureValueSerializer,
     FeatureSerializer,
+    FeatureValueSerializer,
     MapFeatureValueSerailizer,
 )
 
 
 class ParentFeatureListView(ListAPIView):
-    queryset = Feature.objects.filter(parent_feature__isnull=True)
+    queryset = Feature.objects.filter(parent_feature__isnull=True).select_related(
+        "measure_unit"
+    )
     serializer_class = FeatureSerializer
 
 
 class ChildFeatureListView(ListAPIView):
-    queryset = Feature.objects.all()
+    queryset = Feature.objects.select_related("measure_unit")
     serializer_class = FeatureSerializer
     filterset_fields = ("parent_feature",)
 
 
 class MapFeatureValueListView(ListAPIView):
-    queryset = FeatureValue.objects.all()
+    queryset = FeatureValue.objects.select_related("region")
     serializer_class = MapFeatureValueSerailizer
     filterset_fields = ("feature",)
 
@@ -36,6 +39,12 @@ class MapFeatureValueListView(ListAPIView):
 
 
 class ChildFeatureValueListView(ListAPIView):
-    queryset = FeatureValue.objects.all()
+    queryset = FeatureValue.objects.select_related("feature")
     filterset_fields = ("region", "feature__parent_feature")
     serializer_class = ChildFeatureValueSerializer
+
+
+class FeatureValueListView(ListAPIView):
+    queryset = FeatureValue.objects.select_related("feature__region")
+    filterset_fields = "feature"
+    serializer_class = FeatureValueSerializer
