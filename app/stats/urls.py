@@ -8,4 +8,5 @@ urlpatterns = [
     path("feature-values/map", views.MapFeatureValueListView.as_view()),
     path("feature-values/children", views.ChildFeatureValueListView.as_view()),
     path("feature-values", views.FeatureValueListView.as_view()),
+    path("feature-values/yearly", views.YearlyFeatureValueListView.as_view()),
 ]

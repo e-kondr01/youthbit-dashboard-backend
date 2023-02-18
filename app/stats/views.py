@@ -1,3 +1,5 @@
+from datetime import date
+
 from django.db.models import Max, Min
 from rest_framework.generics import ListAPIView
 from rest_framework.pagination import LimitOffsetPagination
@@ -9,7 +11,10 @@ from stats.serializers import (
     FeatureSerializer,
     FeatureValueSerializer,
     MapFeatureValueSerailizer,
+    YearlyFeatureValueSerializer,
 )
+
+CURRENT_YEAR = date.today().year
 
 
 class ParentFeatureListView(ListAPIView):
@@ -26,7 +31,7 @@ class ChildFeatureListView(ListAPIView):
 
 
 class MapFeatureValueListView(ListAPIView):
-    queryset = FeatureValue.objects.select_related("region")
+    queryset = FeatureValue.objects.filter(year=CURRENT_YEAR).select_related("region")
     serializer_class = MapFeatureValueSerailizer
     filterset_fields = ("feature",)
 
@@ -49,14 +54,20 @@ class MapFeatureValueListView(ListAPIView):
 
 
 class ChildFeatureValueListView(ListAPIView):
-    queryset = FeatureValue.objects.select_related("feature")
+    queryset = FeatureValue.objects.filter(year=CURRENT_YEAR).select_related("feature")
     filterset_class = ChildFeatureValueFilterSet
     serializer_class = ChildFeatureValueSerializer
     pagination_class = LimitOffsetPagination
 
 
 class FeatureValueListView(ListAPIView):
-    queryset = FeatureValue.objects.select_related("region")
+    queryset = FeatureValue.objects.filter(year=CURRENT_YEAR).select_related("region")
     filterset_class = FeatureValueFilterSet
     serializer_class = FeatureValueSerializer
     pagination_class = LimitOffsetPagination
+
+
+class YearlyFeatureValueListView(ListAPIView):
+    queryset = FeatureValue.objects.all()
+    filterset_fields = ("feature", "region")
+    serializer_class = YearlyFeatureValueSerializer

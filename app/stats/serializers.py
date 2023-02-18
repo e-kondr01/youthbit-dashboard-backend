@@ -43,3 +43,11 @@ class FeatureValueSerializer(serializers.ModelSerializer):
     class Meta:
         model = FeatureValue
         fields = ("name", "value")
+
+
+class YearlyFeatureValueSerializer(serializers.ModelSerializer):
+    name = serializers.CharField(source="year")
+
+    class Meta:
+        model = FeatureValue
+        fields = ("name", "value")
